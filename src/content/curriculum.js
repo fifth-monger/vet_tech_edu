@@ -4,7 +4,7 @@ export const lesson = {
   title: 'Anatomical Directional Terms',
   eyebrow: 'Medical Terminology · Lesson 1',
   summary: 'Build a shared map for describing exactly where a structure or observation is located on an animal.',
-  estimatedMinutes: 12,
+  estimatedMinutes: 15,
   species: ['General veterinary anatomy', 'Mammal examples'],
   riskLevel: 'Foundational',
   reviewStatus: 'Source verified',
@@ -75,6 +75,23 @@ export const lesson = {
     prompt: 'A fictional rabbit has a small area of hair loss on the outer side of the left forelimb, below the elbow and close to the skin surface.',
     note: 'A neutral location description could use lateral, distal to the elbow, and superficial. It should not guess at the cause.',
   },
+  documentationExample: {
+    title: 'From plain language to an exam note',
+    plainLanguage: '“She has a scrape on the outside of her left front leg, a little below the elbow, and she has been limping since this morning.”',
+    termMap: [
+      ['outside', 'lateral aspect'],
+      ['left front leg', 'left thoracic limb'],
+      ['below the elbow', 'distal to the elbow · antebrachium'],
+      ['close to the skin surface', 'superficial'],
+    ],
+    examNote: [
+      { label: 'Client report', text: 'Client reports patient began “limping on the left front leg” this morning after free-roam time.' },
+      { label: 'Tech observation', text: 'Intermittent decreased weight bearing on left thoracic limb observed during ambulation.' },
+      { label: 'Location', text: 'Approx. 1 cm superficial alopecic area on lateral aspect of left antebrachium, distal to elbow; no active bleeding observed.' },
+      { label: 'Next step', text: 'DVM evaluation pending.' },
+    ],
+    caution: 'Document only what the client reported, what you directly observed, and what you measured. Do not substitute an unconfirmed diagnosis such as “sprain” or “infection.” Follow your clinic’s required format and scope of responsibility.',
+  },
   questions: [
     { id: 'q-dorsal', concept: 'Dorsal and ventral', prompt: 'The vertebral column is ____ to the sternum.', options: ['Ventral', 'Dorsal', 'Distal', 'Lateral'], correctAnswer: 'Dorsal', explanation: 'Dorsal means toward the back. In a quadruped, the vertebral column lies dorsal to the sternum.' },
     { id: 'q-cranial', concept: 'Cranial and caudal', prompt: 'Which statement uses cranial and caudal correctly?', options: ['The pelvis is cranial to the abdomen.', 'The diaphragm is caudal to the pelvis.', 'The heart is cranial to the diaphragm.', 'The tail is cranial to the thorax.'], correctAnswer: 'The heart is cranial to the diaphragm.', explanation: 'Cranial points toward the head and caudal toward the tail. The heart sits on the head-facing side of the diaphragm.' },
@@ -93,6 +110,7 @@ export const lesson = {
   sources: [
     { title: 'Nomina Anatomica Veterinaria, Sixth Edition', organization: 'World Association of Veterinary Anatomists', url: 'https://wava-amav.org/wava-documents.html', note: 'Standard veterinary anatomical nomenclature and directional-term conventions.' },
     { title: 'Directional Anatomical Terminology teaching resources', organization: 'Texas A&M School of Veterinary Medicine & Biomedical Sciences', url: 'https://vetmed.tamu.edu/peer/teacher-requested-resources/', note: 'Veterinary teaching context for learning and applying directional terminology.' },
+    { title: 'Tips for Efficient Wellness Visits', organization: 'American Animal Hospital Association', url: 'https://www.aaha.org/resources/life-stage-canine-2019/tips-for-efficient-wellness-visits/', note: 'Supports clear documentation of historical and physical examination information for communication and continuity.' },
   ],
 }
 
