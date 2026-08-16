@@ -129,8 +129,13 @@ export const lesson = {
 export const course = {
   id: 'medical-terminology', title: 'Medical Terminology',
   description: 'Build the language you will use across patient intake, documentation, radiography, and every species track.',
-  lessonCount: 4, availableLessons: 1,
+  lessonCount: 4, availableLessons: 2,
 }
+
+export const plannedTerminologyLessons = [
+  { title: 'Prefixes, Suffixes & Roots', description: 'Break unfamiliar medical words into smaller pieces you can recognize and interpret.' },
+  { title: 'Radiograph & Projection Terminology', description: 'Learn the positioning, projection, orientation, and labeling terms used around radiographs.' },
+]
 
 export const plannedCourses = [
   { title: 'Patient Intake & TPR', description: 'Gather a clear history, record initial observations, and prepare a concise handoff.', icon: 'pulse' },

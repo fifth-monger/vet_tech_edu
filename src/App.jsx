@@ -8,6 +8,9 @@ import { ProgressPage } from './pages/ProgressPage.jsx'
 import { QuizPage } from './pages/QuizPage.jsx'
 import { ReferencePage } from './pages/ReferencePage.jsx'
 import { ReviewPage } from './pages/ReviewPage.jsx'
+import { MedicalRecordLessonPage } from './pages/MedicalRecordLessonPage.jsx'
+import { MedicalRecordReferencePage } from './pages/MedicalRecordReferencePage.jsx'
+import { medicalRecordLesson } from './content/medicalRecord.js'
 import './App.css'
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
         <Route path="lessons/anatomical-directional-terms" element={<LessonPage />} />
         <Route path="lessons/anatomical-directional-terms/quiz" element={<QuizPage />} />
         <Route path="lessons/anatomical-directional-terms/reference" element={<ReferencePage />} />
+        <Route path="lessons/understanding-medical-records" element={<MedicalRecordLessonPage />} />
+        <Route path="lessons/understanding-medical-records/quiz" element={<QuizPage lessonData={medicalRecordLesson} heading="Check your record-language skills" />} />
+        <Route path="lessons/understanding-medical-records/reference" element={<MedicalRecordReferencePage />} />
         <Route path="review" element={<ReviewPage />} />
         <Route path="progress" element={<ProgressPage />} />
         <Route path="*" element={<NotFoundPage />} />

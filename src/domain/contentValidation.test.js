@@ -1,10 +1,15 @@
 import { describe, expect, it } from 'vitest'
 import { lesson } from '../content/curriculum.js'
+import { medicalRecordLesson } from '../content/medicalRecord.js'
 import { validateLesson } from './contentValidation.js'
 
 describe('lesson content validation', () => {
   it('publishes the sourced directional terms lesson', () => {
     expect(validateLesson(lesson)).toEqual([])
+  })
+
+  it('publishes the SVC-aligned medical-record language lesson', () => {
+    expect(validateLesson(medicalRecordLesson)).toEqual([])
   })
 
   it('rejects an unapproved lesson with a broken answer', () => {
