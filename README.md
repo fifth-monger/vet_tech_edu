@@ -6,7 +6,25 @@ The project will begin with medical terminology, client intake, TPR, objective d
 
 ## Current status
 
-Planning is complete enough to begin Milestone 0. No React application has been scaffolded yet.
+The first complete learning slice is live in the React app:
+
+- Responsive dashboard and course overview
+- A source-verified Anatomical Directional Terms lesson
+- Five-question knowledge check with explanations
+- Quick-reference card and missed-concept review
+- Versioned, device-local progress with confirmed reset
+- Automated checks for scoring, persistence, and lesson content
+
+Future foundational courses and the avian, reptile, rabbit, and rodent tracks are shown as planned rather than empty or published content.
+
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Use `npm test`, `npm run lint`, and `npm run build` to run the project checks.
 
 ## Learning-first build approach
 
@@ -25,9 +43,8 @@ This project is both a working product and a way for Victoria to strengthen inde
 - Plain CSS
 - Git
 
-React Router, testing tools, TypeScript, and Tailwind CSS will be introduced deliberately when the project creates a clear reason to learn them.
+React Router and Vitest were introduced with the first multi-screen learning flow and its scoring and progress behavior. TypeScript and Tailwind CSS remain deferred.
 
 ## Planning documents
 
 See [`planning/`](planning/) for the product brief, MVP scope, curriculum, safety policy, user flows, technical design, and roadmap.
-
