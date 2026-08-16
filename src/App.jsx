@@ -14,6 +14,9 @@ import { medicalRecordLesson } from './content/medicalRecord.js'
 import { WordBuildingLessonPage } from './pages/WordBuildingLessonPage.jsx'
 import { WordBuildingReferencePage } from './pages/WordBuildingReferencePage.jsx'
 import { wordBuildingLesson } from './content/wordBuilding.js'
+import { ClinicAbbreviationsLessonPage } from './pages/ClinicAbbreviationsLessonPage.jsx'
+import { ClinicAbbreviationsReferencePage } from './pages/ClinicAbbreviationsReferencePage.jsx'
+import { abbreviationLesson } from './content/clinicAbbreviations.js'
 import './App.css'
 
 function App() {
@@ -32,6 +35,9 @@ function App() {
         <Route path="lessons/building-medical-words" element={<WordBuildingLessonPage />} />
         <Route path="lessons/building-medical-words/quiz" element={<QuizPage lessonData={wordBuildingLesson} heading="Build the meaning" />} />
         <Route path="lessons/building-medical-words/reference" element={<WordBuildingReferencePage />} />
+        <Route path="lessons/common-clinic-abbreviations" element={<ClinicAbbreviationsLessonPage />} />
+        <Route path="lessons/common-clinic-abbreviations/quiz" element={<QuizPage lessonData={abbreviationLesson} heading="Translate the clinic shorthand" />} />
+        <Route path="lessons/common-clinic-abbreviations/reference" element={<ClinicAbbreviationsReferencePage />} />
         <Route path="review" element={<ReviewPage />} />
         <Route path="progress" element={<ProgressPage />} />
         <Route path="*" element={<NotFoundPage />} />
