@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Craniocaudal and caudocranial limb projections</title>
+  <desc id="desc">Two diagrams show a limb between the x-ray source and detector. In a craniocaudal projection the beam enters the cranial surface and exits caudally. In a caudocranial projection it enters caudally and exits cranially.</desc>
+  <defs><marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0 0L12 6 0 12Z" fill="#f39b29"/></marker></defs>
+  <rect width="1200" height="500" rx="34" fill="#f7fbfd"/>
+  <g font-family="Arial, sans-serif">
+    <g transform="translate(40 40)">
+      <rect width="540" height="420" rx="26" fill="#fff" stroke="#cfe2eb" stroke-width="3"/>
+      <text x="32" y="55" font-size="25" font-weight="700" fill="#087ca8">CrCd · CRANIOCAUDAL</text>
+      <text x="32" y="88" font-size="18" fill="#5d6e77">Beam enters cranial and exits caudal</text>
+      <g transform="translate(85 135)">
+        <text x="0" y="-10" font-size="16" font-weight="700" fill="#087ca8">CRANIAL</text>
+        <path d="M185 5c-24 25-24 58-8 82l-9 67c-4 32 20 58 52 58s56-26 52-58l-9-67c16-24 16-57-8-82Z" fill="#dff3fa" stroke="#087ca8" stroke-width="5"/>
+        <circle cx="220" cy="70" r="27" fill="#fff" stroke="#7bbbd2" stroke-width="4"/>
+        <path d="M-20 105H155" stroke="#f39b29" stroke-width="10" marker-end="url(#arrow)"/>
+        <rect x="290" y="0" width="24" height="220" rx="12" fill="#07141a"/>
+        <text x="327" y="110" transform="rotate(90 327 110)" text-anchor="middle" font-size="15" fill="#5d6e77">DETECTOR · CAUDAL</text>
+      </g>
+    </g>
+    <g transform="translate(620 40)">
+      <rect width="540" height="420" rx="26" fill="#fff" stroke="#cfe2eb" stroke-width="3"/>
+      <text x="32" y="55" font-size="25" font-weight="700" fill="#087ca8">CdCr · CAUDOCRANIAL</text>
+      <text x="32" y="88" font-size="18" fill="#5d6e77">Beam enters caudal and exits cranial</text>
+      <g transform="translate(120 135)">
+        <text x="320" y="-10" text-anchor="end" font-size="16" font-weight="700" fill="#087ca8">CAUDAL</text>
+        <path d="M185 5c-24 25-24 58-8 82l-9 67c-4 32 20 58 52 58s56-26 52-58l-9-67c16-24 16-57-8-82Z" fill="#fff1dc" stroke="#f39b29" stroke-width="5"/>
+        <circle cx="220" cy="70" r="27" fill="#fff" stroke="#e6b36b" stroke-width="4"/>
+        <path d="M420 105H285" stroke="#f39b29" stroke-width="10" marker-end="url(#arrow)"/>
+        <rect x="126" y="0" width="24" height="220" rx="12" fill="#07141a"/>
+        <text x="112" y="110" transform="rotate(-90 112 110)" text-anchor="middle" font-size="15" fill="#5d6e77">DETECTOR · CRANIAL</text>
+      </g>
+    </g>
+  </g>
+</svg>

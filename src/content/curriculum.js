@@ -129,12 +129,10 @@ export const lesson = {
 export const course = {
   id: 'medical-terminology', title: 'Medical Terminology',
   description: 'Build the language you will use across patient intake, documentation, radiography, and every species track.',
-  lessonCount: 5, availableLessons: 4,
+  lessonCount: 5, availableLessons: 5,
 }
 
-export const plannedTerminologyLessons = [
-  { title: 'Radiograph & Projection Terminology', description: 'Learn the positioning, projection, orientation, and labeling terms used around radiographs.' },
-]
+export const plannedTerminologyLessons = []
 
 export const plannedCourses = [
   { title: 'Patient Intake & TPR', description: 'Gather a clear history, record initial observations, and prepare a concise handoff.', icon: 'pulse' },

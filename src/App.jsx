@@ -17,6 +17,9 @@ import { wordBuildingLesson } from './content/wordBuilding.js'
 import { ClinicAbbreviationsLessonPage } from './pages/ClinicAbbreviationsLessonPage.jsx'
 import { ClinicAbbreviationsReferencePage } from './pages/ClinicAbbreviationsReferencePage.jsx'
 import { abbreviationLesson } from './content/clinicAbbreviations.js'
+import { RadiographTerminologyLessonPage } from './pages/RadiographTerminologyLessonPage.jsx'
+import { RadiographTerminologyReferencePage } from './pages/RadiographTerminologyReferencePage.jsx'
+import { radiographLesson } from './content/radiographTerminology.js'
 import './App.css'
 
 function App() {
@@ -38,6 +41,9 @@ function App() {
         <Route path="lessons/common-clinic-abbreviations" element={<ClinicAbbreviationsLessonPage />} />
         <Route path="lessons/common-clinic-abbreviations/quiz" element={<QuizPage lessonData={abbreviationLesson} heading="Translate the clinic shorthand" />} />
         <Route path="lessons/common-clinic-abbreviations/reference" element={<ClinicAbbreviationsReferencePage />} />
+        <Route path="lessons/radiograph-projection-terminology" element={<RadiographTerminologyLessonPage />} />
+        <Route path="lessons/radiograph-projection-terminology/quiz" element={<QuizPage lessonData={radiographLesson} heading="Read the projection" />} />
+        <Route path="lessons/radiograph-projection-terminology/reference" element={<RadiographTerminologyReferencePage />} />
         <Route path="review" element={<ReviewPage />} />
         <Route path="progress" element={<ProgressPage />} />
         <Route path="*" element={<NotFoundPage />} />

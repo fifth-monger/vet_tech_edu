@@ -3,6 +3,7 @@ import { lesson } from '../content/curriculum.js'
 import { medicalRecordLesson } from '../content/medicalRecord.js'
 import { wordBuildingLesson } from '../content/wordBuilding.js'
 import { abbreviationLesson } from '../content/clinicAbbreviations.js'
+import { radiographLesson } from '../content/radiographTerminology.js'
 import { validateLesson } from './contentValidation.js'
 
 describe('lesson content validation', () => {
@@ -20,6 +21,10 @@ describe('lesson content validation', () => {
 
   it('publishes the SVC clinic-abbreviation lesson', () => {
     expect(validateLesson(abbreviationLesson)).toEqual([])
+  })
+
+  it('publishes the sourced radiograph terminology lesson', () => {
+    expect(validateLesson(radiographLesson)).toEqual([])
   })
 
   it('rejects an unapproved lesson with a broken answer', () => {
