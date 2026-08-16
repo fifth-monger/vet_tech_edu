@@ -32,8 +32,8 @@ export const lesson = {
     {
       id: 'body-axis', kicker: 'Pair 1', title: 'Cranial ↔ caudal',
       terms: [
-        { term: 'Cranial', definition: 'Toward the animal’s head.', cue: 'Think: closer to the head.' },
-        { term: 'Caudal', definition: 'Toward the animal’s tail.', cue: 'Think: closer to the tail.' },
+        { term: 'Cranial', definition: 'Toward the animal’s head.', cue: 'Think: Your cranium is your skull—cranial points toward the head.' },
+        { term: 'Caudal', definition: 'Toward the animal’s tail.', cue: 'Think: Picture a cow swishing its tail at its caudal end.' },
       ],
       appliedExample: {
         species: 'Dog',
@@ -47,8 +47,8 @@ export const lesson = {
     {
       id: 'back-belly', kicker: 'Pair 2', title: 'Dorsal ↔ ventral',
       terms: [
-        { term: 'Dorsal', definition: 'Toward the animal’s back or upper surface.', cue: 'Think: back.' },
-        { term: 'Ventral', definition: 'Toward the animal’s belly or underside.', cue: 'Think: belly.' },
+        { term: 'Dorsal', definition: 'Toward the animal’s back or upper surface.', cue: 'Think: A dolphin’s dorsal fin is on its back.' },
+        { term: 'Ventral', definition: 'Toward the animal’s belly or underside.', cue: 'Think: A vest zips over your ventral side—your chest and belly.' },
       ],
       appliedExample: {
         species: 'Cat',
@@ -62,8 +62,8 @@ export const lesson = {
     {
       id: 'midline', kicker: 'Pair 3', title: 'Medial ↔ lateral',
       terms: [
-        { term: 'Medial', definition: 'Toward the center line of the animal’s body.', cue: 'Think: toward the middle.' },
-        { term: 'Lateral', definition: 'Away from the center line, toward the outside of the body.', cue: 'Think: toward the outer side.' },
+        { term: 'Medial', definition: 'Toward the center line of the animal’s body.', cue: 'Think: Medial meets in the middle.' },
+        { term: 'Lateral', definition: 'Away from the center line, toward the outside of the body.', cue: 'Think: Your lats spread along the outer sides of your upper body—lateral means toward the side.' },
       ],
       appliedExample: {
         species: 'Horse',
@@ -77,8 +77,8 @@ export const lesson = {
     {
       id: 'limbs', kicker: 'Pair 4', title: 'Proximal ↔ distal',
       terms: [
-        { term: 'Proximal', definition: 'Closer to where a limb connects to the body.', cue: 'Think: closer to the body.' },
-        { term: 'Distal', definition: 'Farther from the body and closer to the paw, hoof, or end of a limb.', cue: 'Think: farther from the body.' },
+        { term: 'Proximal', definition: 'Closer to where a limb connects to the body.', cue: 'Think: Proximity means near—proximal stays near the body.' },
+        { term: 'Distal', definition: 'Farther from the body and closer to the paw, hoof, or end of a limb.', cue: 'Think: Distal sounds like distant—farther from the body.' },
       ],
       appliedExample: {
         species: 'Goat',
@@ -92,8 +92,8 @@ export const lesson = {
     {
       id: 'depth', kicker: 'Pair 5', title: 'Superficial ↔ deep',
       terms: [
-        { term: 'Superficial', definition: 'At or close to the body’s surface.', cue: 'Think: near the surface.' },
-        { term: 'Deep', definition: 'Farther below the body’s surface.', cue: 'Think: farther underneath.' },
+        { term: 'Superficial', definition: 'At or close to the body’s surface.', cue: 'Think: A surface-level scrape is superficial.' },
+        { term: 'Deep', definition: 'Farther below the body’s surface.', cue: 'Think: A deep diver travels far below the surface.' },
       ],
       appliedExample: {
         species: 'Pig',
