@@ -11,6 +11,9 @@ import { ReviewPage } from './pages/ReviewPage.jsx'
 import { MedicalRecordLessonPage } from './pages/MedicalRecordLessonPage.jsx'
 import { MedicalRecordReferencePage } from './pages/MedicalRecordReferencePage.jsx'
 import { medicalRecordLesson } from './content/medicalRecord.js'
+import { WordBuildingLessonPage } from './pages/WordBuildingLessonPage.jsx'
+import { WordBuildingReferencePage } from './pages/WordBuildingReferencePage.jsx'
+import { wordBuildingLesson } from './content/wordBuilding.js'
 import './App.css'
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
         <Route path="lessons/understanding-medical-records" element={<MedicalRecordLessonPage />} />
         <Route path="lessons/understanding-medical-records/quiz" element={<QuizPage lessonData={medicalRecordLesson} heading="Check your record-language skills" />} />
         <Route path="lessons/understanding-medical-records/reference" element={<MedicalRecordReferencePage />} />
+        <Route path="lessons/building-medical-words" element={<WordBuildingLessonPage />} />
+        <Route path="lessons/building-medical-words/quiz" element={<QuizPage lessonData={wordBuildingLesson} heading="Build the meaning" />} />
+        <Route path="lessons/building-medical-words/reference" element={<WordBuildingReferencePage />} />
         <Route path="review" element={<ReviewPage />} />
         <Route path="progress" element={<ProgressPage />} />
         <Route path="*" element={<NotFoundPage />} />

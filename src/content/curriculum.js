@@ -129,11 +129,11 @@ export const lesson = {
 export const course = {
   id: 'medical-terminology', title: 'Medical Terminology',
   description: 'Build the language you will use across patient intake, documentation, radiography, and every species track.',
-  lessonCount: 4, availableLessons: 2,
+  lessonCount: 5, availableLessons: 3,
 }
 
 export const plannedTerminologyLessons = [
-  { title: 'Prefixes, Suffixes & Roots', description: 'Break unfamiliar medical words into smaller pieces you can recognize and interpret.' },
+  { title: 'Common Clinic Abbreviations', description: 'Interpret SVC shorthand for medication directions, diagnostics, procedures, and species-specific care.' },
   { title: 'Radiograph & Projection Terminology', description: 'Learn the positioning, projection, orientation, and labeling terms used around radiographs.' },
 ]
 

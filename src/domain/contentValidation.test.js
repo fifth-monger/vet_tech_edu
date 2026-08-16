@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { lesson } from '../content/curriculum.js'
 import { medicalRecordLesson } from '../content/medicalRecord.js'
+import { wordBuildingLesson } from '../content/wordBuilding.js'
 import { validateLesson } from './contentValidation.js'
 
 describe('lesson content validation', () => {
@@ -10,6 +11,10 @@ describe('lesson content validation', () => {
 
   it('publishes the SVC-aligned medical-record language lesson', () => {
     expect(validateLesson(medicalRecordLesson)).toEqual([])
+  })
+
+  it('publishes the sourced medical word-building lesson', () => {
+    expect(validateLesson(wordBuildingLesson)).toEqual([])
   })
 
   it('rejects an unapproved lesson with a broken answer', () => {
